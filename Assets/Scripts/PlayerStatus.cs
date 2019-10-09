@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    public float health = 350, damage = 10, firedProjectileSpeed = 30;
+    public float health = 350, damage = 10, firedProjectileSpeed = 50;
     // Start is called before the first frame update
     void Start()
     {

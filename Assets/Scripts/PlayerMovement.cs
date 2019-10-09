@@ -34,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 dir = MousePos - transform.position;
         float rotationZ = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+        transform.position = new Vector3(transform.position.x, transform.position.y, 0);
         transform.position = Vector3.MoveTowards(transform.position,MousePos,movementSpeed * Time.deltaTime);
         if (rotateOnce)
         {

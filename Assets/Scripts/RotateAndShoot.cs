@@ -38,6 +38,5 @@ public class RotateAndShoot : MonoBehaviour
         var obj = (GameObject)Instantiate(Projectile, transform.position, transform.rotation);
         obj.GetComponent<ProjectileBasic>().damage = playerStats.damage;
         obj.GetComponent<ProjectileBasic>().projectileSpeed = playerStats.firedProjectileSpeed;
-        Instantiate(obj);
     }
 }
